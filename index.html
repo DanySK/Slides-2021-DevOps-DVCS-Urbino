@@ -9,9 +9,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="/Template-Hugo-Reveal-Slides/reveal-js/css/reset.css">
-<link rel="stylesheet" href="/Template-Hugo-Reveal-Slides/reveal-js/css/reveal.css">
-  <link rel="stylesheet" href="/Template-Hugo-Reveal-Slides/css/custom-theme.min.6728277618991d48a9ca32f1e19db3b956568c0cc7a08accf7953d6ca5a804c8.css" id="theme"><link rel="stylesheet" href="/Template-Hugo-Reveal-Slides/highlight-js/solarized-dark.min.css">
+    <link rel="stylesheet" href="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/css/reveal.css">
+  <link rel="stylesheet" href="/Slides-2021-DevOps-DVCS-Urbino/css/custom-theme.min.48e19bf8fc2d6102b230224b71cb4bafa8299ea418ee1501b13ffaf104faa5eb.css" id="theme"><link rel="stylesheet" href="/Slides-2021-DevOps-DVCS-Urbino/highlight-js/idea.min.css">
     
 <link rel="stylesheet" href="https://gitcdn.link/repo/DanySK/css-blur-animation/master/blur.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
@@ -25,143 +25,133 @@
       <div class="slides">
   
 
-    <section><h1 id="short-guide-to-markdown-slides">Short guide to Markdown slides</h1>
+    <section><h2 id="collaborative-software-development">Collaborative software development</h2>
+<h3 id="a-devops-overview">a DevOps overview</h3>
+<p><a href="mailto:danilo.pianini@unibo.it"><strong>Danilo Pianini</strong> (danilo.pianini@unibo.it)</a></p>
 </section><section>
-<h1 id="headers">Headers</h1>
-<h1 id="h1">H1</h1>
-<h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<h4 id="h4">H4</h4>
+<h1 id="development">Development</h1>
+<ul>
+<li>Analysis of a domain</li>
+<li>Design of a solution</li>
+<li>Implementation</li>
+<li>Testing</li>
+</ul>
 </section><section>
-<h1 id="text">Text</h1>
-<p>normal text</p>
-<p><code>inline code</code></p>
-<p><em>italic</em></p>
-<p><strong>bold</strong></p>
-<p><strong><em>emphasized</em></strong></p>
-<p><em><strong>emphasized alternative</strong></em></p>
-<p><del>strikethrough</del></p>
-<p><a href="http://www.google.com">link</a></p>
+<h1 id="operations">Operations</h1>
+<ul>
+<li>IT infrastructure</li>
+<li>Deployment</li>
+<li>Maintenance</li>
+</ul>
 </section><section>
-<h1 id="lists-and-enums">Lists and enums</h1>
+<h1 id="silo-mentality">Silo mentality</h1>
+<img src="assets/silos.svg" style="max-height: 40vh; object-fit: contain;"/>
+</section><section>
+<h1 id="no-silos"><strong>No</strong> silos</h1>
+<img src="assets/no-silos.svg" style="max-height: 40vh; object-fit: contain;"/>
+</section><section>
+<h1 id="devops-culture">DevOps culture</h1>
+<ul>
+<li>
+<p><strong>Increased collaboration</strong></p>
+<ul>
+<li>Dev and Ops should <em>exchange information</em> and <em>work together</em></li>
+</ul>
+</li>
+<li>
+<p><strong>Shared responsibility</strong></p>
+<ul>
+<li>A team is responsible for the (sub) product for its <em>whole lifetime</em></li>
+<li><em>No handing over</em> projects from devs to ops</li>
+</ul>
+</li>
+<li>
+<p><strong>Autonomous teams</strong></p>
+<ul>
+<li><em>Lightweight decision making</em> process</li>
+</ul>
+</li>
+<li>
+<p><strong>Focus on the process, not just the product</strong></p>
+<ul>
+<li>Promote small, <em>incremental changes</em></li>
+<li><em>Automate</em> as much as possible</li>
+<li>Leverage the right <em>tool</em> for the job at hand</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="why-bother">Why bother?</h1>
 <ol>
-<li>First ordered list item</li>
-<li>Another item
+<li>
+<p><strong>Risk management</strong></p>
 <ul>
-<li>Unordered sub-list.</li>
-<li>with two items
+<li>Reduce the probability of <em>failure</em></li>
+<li>Detect <em>defects</em> before hitting the market</li>
+<li>Quickly <em>react</em> to problems</li>
+</ul>
+</li>
+<li>
+<p><strong>Resource exploitation</strong></p>
 <ul>
-<li>another sublist
+<li>Use <em>human resources</em> for human-y work</li>
+<li>Reduce <em>time to market</em></li>
+<li>Embrace <em>innovation</em></li>
+<li>Exploit <em>emerging technologies</em></li>
+</ul>
+</li>
+</ol>
+</section><section>
+<h1 id="devops">DevOps</h1>
 <ol>
-<li>With a sub-enum</li>
-<li>yay!</li>
+<li><strong>Principles</strong></li>
+<li><strong>Practices</strong></li>
+<li><strong>Tools</strong></li>
 </ol>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Actual numbers don&rsquo;t matter, just that it&rsquo;s a number</li>
-<li>Ordered sub-list</li>
-<li>And another item.</li>
-</ol>
+<p><strong>Principles</strong> <em>inspire</em> <strong>practices</strong></p>
+<p><strong>Practices</strong> <em>require</em> <strong>tools</strong></p>
 </section><section>
-<h1 id="inline-images">Inline images</h1>
-<p><img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" alt="Alternative text"></p>
-</section><section>
-<h2 id="fallback-to-shortcodes-for-resizing">Fallback to shortcodes for resizing</h2>
-<p>Autoresize specifying</p>
+<h1 id="devops-principles">DevOps principles</h1>
+<h3 id="not-exhaustive">(not exhaustive)</h3>
 <ul>
-<li><code>max-w</code> (percent of parent element width) and/or <code>max-h</code> (percent of viewport height) as max sizes , and</li>
-<li><code>width</code> and/or <code>height</code> as <em>exact</em> sizes (as percent of viewport size)</li>
+<li>Collaboration</li>
+<li>Reproducibility</li>
+<li>Automation</li>
+<li>Incrementality</li>
+<li>Robustness</li>
 </ul>
-<img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" style='
-    
-    
-    max-width: 95vw;
-    max-height: 20vh;
-    object-fit: contain;
-'>
-
 </section><section>
-<h2 id="low-res-plain-markdown">Low res, plain markdown</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/it/thumb/6/6c/Scavolino_innevata.jpg/260px-Scavolino_innevata.jpg" alt=""></p>
+<h1 id="devops-practices">DevOps practices</h1>
+<ul>
+<li><em>Workflow organization</em> $\Leftarrow$ today&rsquo;s focus</li>
+<li>Build automation</li>
+<li>Static Analysis</li>
+<li>Dynamic Analysis (testing)</li>
+<li>Continuous Integration</li>
+<li>Continuous Delivery</li>
+<li>Continuous Deployment</li>
+<li>Continuous Monitoring</li>
+<li>Automatic updates</li>
+</ul>
 </section><section>
-<h2 id="hi-res-plain-markdown">Hi res, plain markdown</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" alt=""></p>
+<h1 id="version-control-systems">Version Control Systems</h1>
+<p>A system responsible for managing changes to the project files</p>
+<ul>
+<li>Records the history</li>
+<li>Enables roll-backs</li>
+<li>Promotes collaborative workflows</li>
+<li><strong>Distributed</strong> vs. <em>Centralized</em>
+<ul>
+<li><strong>Every developer has a whole copy of the entire history</strong></li>
+<li><em>There exist a central point of synchronization</em></li>
+</ul>
+</li>
+<li>Also called Source Content Management (SCM)</li>
+</ul>
+<p>$\Rightarrow$ enable new <em>workflows</em></p>
 </section><section>
-<h2 id="low-res-default">Low res, default</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/thumb/6/6c/Scavolino_innevata.jpg/260px-Scavolino_innevata.jpg" style='
-    
-    
-    max-width: 95vw;
-    max-height: 80vh;
-    object-fit: contain;
-'>
-
-</section><section>
-<h2 id="hi-res-default">Hi res, default</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" style='
-    
-    
-    max-width: 95vw;
-    max-height: 80vh;
-    object-fit: contain;
-'>
-
-</section><section>
-<h2 id="low-res-enlarged-horizontally">Low res, enlarged horizontally</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/thumb/6/6c/Scavolino_innevata.jpg/260px-Scavolino_innevata.jpg" style='
-    width: 100vw;
-    
-    max-width: 95vw;
-    max-height: 80vh;
-    object-fit: contain;
-'>
-
-</section><section>
-<h2 id="low-res-enlarged-vertically">Low res, enlarged vertically</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/thumb/6/6c/Scavolino_innevata.jpg/260px-Scavolino_innevata.jpg" style='
-    
-    height: 100vh;
-    max-width: 95vw;
-    max-height: 80vh;
-    object-fit: contain;
-'>
-
-</section><section>
-<h2 id="hi-res-reduced-horizontally">Hi res, reduced horizontally</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" style='
-    width: 50vw;
-    
-    max-width: 95vw;
-    max-height: 80vh;
-    object-fit: contain;
-'>
-
-</section><section>
-<h2 id="hi-res-reduced-vertically">Hi res, reduced vertically</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" style='
-    
-    height: 50vh;
-    max-width: 95vw;
-    max-height: 80vh;
-    object-fit: contain;
-'>
-
-</section><section>
-<h2 id="hi-res-reducing-maximum-expansion-horizontally">Hi res, reducing maximum expansion horizontally</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" style='
-    
-    
-    max-width: 50vw;
-    max-height: 80vh;
-    object-fit: contain;
-'>
-
-</section><section>
-<h2 id="hi-res-reducing-maximum-expansion-vertically">Hi res, reducing maximum expansion vertically</h2>
-<img src="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg" style='
+<h2 id="centralized-version-control-systems">Centralized Version Control Systems</h2>
+<img src="2021-04-14-centralized-vcs.svg" style='
     
     
     max-width: 95vw;
@@ -169,118 +159,806 @@
     object-fit: contain;
 '>
 
-</section>
+</section><section>
+<h2 id="decentralized-vcs">Decentralized VCS</h2>
+<img src="2021-04-14-decentralized-vcs.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 50vh;
+    object-fit: contain;
+'>
 
-<section data-noprocess data-shortcode-slide
-      data-background-image="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg">
-  
-<h1 id="large-images-as-background">Large images as background</h1>
-<h2 id="may-affect-printing">(May affect printing)</h2>
-</section>
+</section><section>
+<h2 id="real-world-dvcs">Real-world DVCS</h2>
+<img src="2021-04-14-dvcs-sink.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 50vh;
+    object-fit: contain;
+'>
 
-<section data-noprocess data-shortcode-slide
-      data-background-image="https://upload.wikimedia.org/wikipedia/it/6/6c/Scavolino_innevata.jpg"
-      data-state="blur-animation-light"
-      data-transition="fade-in fade-out">
-  
-<h1 id="also-available-with-blur-and-custom-transitions">Also available with blur and custom transitions</h1>
-<h2 id="may-affect-printing-1">(May affect printing)</h2>
 </section><section>
-<h1 id="latex">$$\LaTeX{}$$</h1>
-<p>Inline equations like $E=mc^2$</p>
-<p>$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$</p>
-</section><section>
-<h1 id="code-snippets">Code snippets</h1>
-<pre><code class="language-kotlin">val x = pippo
-</code></pre>
-<pre><code class="language-go">package main
- 
-import &quot;fmt&quot;
- 
-func main() {
-    fmt.Println(&quot;Hello world!&quot;)
-}
-</code></pre>
-</section><section>
-<h1 id="tables">Tables</h1>
-<p>Colons can be used to align columns.</p>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td style="text-align:center">right-aligned</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td style="text-align:center">centered</td>
-<td style="text-align:right">$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td style="text-align:center">are neat</td>
-<td style="text-align:right">$1</td>
-</tr>
-</tbody>
-</table>
-<p>There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don&rsquo;t need to make the
-raw Markdown line up prettily. You can also use inline Markdown.</p>
-</section><section>
-<h1 id="quotes">Quotes</h1>
-<blockquote>
-<p>Multiple
-lines
-of
-a
-single
-quote
-get
-joined</p>
-</blockquote>
-<blockquote>
-<p>Very long one liners of Markdown text automatically get broken into a multiline quotation, which is then rendered in the slides.</p>
-</blockquote>
-</section><section>
-<h1 id="fragments">Fragments</h1>
+<h2 id="reference-dvcs-git">Reference DVCS: Git</h2>
+<p>De-facto reference distributed version control system</p>
 <ul>
-<li><span class='fragment '
-  >
-  pluto
-</span></li>
-<li><span class='fragment '
-  >
-  pluto
-</span></li>
-<li><span class='fragment '
-  >
-  pluto
-</span></li>
+<li><em>Distributed</em></li>
+<li><em>Differential tracking</em></li>
+<li>Born in <em>2005</em> to replace BitKeeper as SCM for the Linux kernel
+<ul>
+<li>Performance was a major concern</li>
+<li>Written in C</li>
+</ul>
+</li>
+<li>Developed by Linus Torvalds
+<ul>
+<li>Now maintained by Hamano and others</li>
+</ul>
+</li>
+<li><em>Unix-oriented</em>
+<ul>
+<li>Tracks Unix file permissions</li>
+</ul>
+</li>
+<li>Very <em>fast</em>
+<ul>
+<li>At conception, 10 times faster than Mercurial¹, 100 times faster than Bazaar</li>
+</ul>
+</li>
+</ul>
+<p>¹ Less difference now, Facebook vastly improved Mercurial</p>
+</section><section>
+<h2 id="funny-historical-introduction">Funny historical introduction</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4XpnKHJAok8?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Linus Torvalds introduces Git at Google"></iframe>
+</div>
+
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap">Distributed version control with git: a recap</h2>
+<p>You should already be acquainted with the tool, this is an express guide/recap</p>
+<p>Sub-commands and files are in <code>monospace</code>, concepts in <em>italic</em></p>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-1">Distributed version control with git: a recap</h2>
+<h3 id="repository"><em>Repository</em></h3>
+<ul>
+<li>Collection of metadata containing the history of the project</li>
+<li>Reified in the <code>.git</code> folder</li>
+<li>The location of the <code>.git</code> folder marks the root of the repository</li>
 </ul>
 </section><section>
-<h1 id="graphs-via-gravizo">Graphs via Gravizo</h1>
-
-
-  
+<h2 id="distributed-version-control-with-git-a-recap-2">Distributed version control with git: a recap</h2>
+<h3 id="working-tree"><em>Working tree</em></h3>
+<ul>
+<li>The directory associated with the root of your repository and its contents</li>
+<li>Contains the files tracked by git</li>
+<li>Not all files in the working tree are tracked</li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-3">Distributed version control with git: a recap</h2>
+<h3 id="git-init"><code>git init</code></h3>
+<ul>
+<li>Initializes a new repository from the current directory</li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-4">Distributed version control with git: a recap</h2>
+<h3 id="stage"><em>Stage</em></h3>
+<p>The <strong>changes</strong> that will be saved next</p>
+<img src="staging.png" style='
     
-  
+    
+    max-width: 95vw;
+    max-height: 80vh;
+    object-fit: contain;
+'>
 
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-5">Distributed version control with git: a recap</h2>
+<h3 id="git-add-files"><code>git add &lt;files&gt;</code></h3>
+<ul>
+<li>Moves the current <strong>changes</strong> in <code>&lt;files&gt;</code> into the <em>stage</em></li>
+</ul>
+<h3 id="git-reset-files"><code>git reset &lt;files&gt;</code></h3>
+<ul>
+<li>Removes the current <strong>changes</strong> to <code>&lt;files&gt;</code> from the <em>stage</em></li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-6">Distributed version control with git: a recap</h2>
+<h3 id="gitignore"><code>.gitignore</code></h3>
+<ul>
+<li>A file listing the pathspecs that git should <strong>ignore</strong> even if added</li>
+<li>Adding is still possible via <code>--force</code></li>
+</ul>
+<h3 id="gitattributes"><code>.gitattributes</code></h3>
+<ul>
+<li>Defines attributes for path names</li>
+<li>Can enforce the correct line ending</li>
+<li>Can provide ways to diff binary file (by conversion to text, needs configuration)</li>
+<li>Example:</li>
+</ul>
+<pre><code class="language-C">* text=auto eol=lf
+*.[cC][mM][dD] text eol=crlf
+*.[bB][aA][tT] text eol=crlf
+*.[pP][sS]1 text eol=crlf
+</code></pre>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-7">Distributed version control with git: a recap</h2>
+<h3 id="git-commit"><code>git commit</code></h3>
+<ul>
+<li>Create a new <em>changeset</em> with the contents of the stage</li>
+<li>Requires a <strong>message</strong></li>
+<li>Using appropriate messages is <strong>extremely important</strong></li>
+</ul>
+<h3 id="head"><em>HEAD</em></h3>
+<ul>
+<li>Pointer to the current commit</li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-8">Distributed version control with git: a recap</h2>
+<h3 id="branch"><em>Branch</em></h3>
+<ul>
+<li>A <strong>named</strong> development line
+<br>
+<img src="branches.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 80vh;
+    object-fit: contain;
+'>
+</li>
+</ul>
+<h3 id="master"><code>master</code></h3>
+<ul>
+<li>Default branch name
+<ul>
+<li>legacy of BitKeeper</li>
+<li>Modern versions of git let user select</li>
+<li>Some prefer <code>main</code></li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-9">Distributed version control with git: a recap</h2>
+<h3 id="git-checkout"><code>git checkout</code></h3>
+<ul>
+<li>Moves <em>HEAD</em> across commits</li>
+<li>Used to switch <em>branches</em></li>
+<li>Can be used to create new <em>branches</em> (with <code>-b</code>)</li>
+</ul>
+<h3 id="detached-head"><em>detached HEAD</em></h3>
+<ul>
+<li>Special mode in which commits are not saved</li>
+<li>The system goes in <em>detached HEAD</em> when <em>HEAD</em> is not the last commit on a <em>branch</em></li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-10">Distributed version control with git: a recap</h2>
+<h3 id="git-branch"><code>git branch</code></h3>
+<ul>
+<li>Controls creation, visualization, and deletion (<code>-d</code>) of branches</li>
+</ul>
+<h3 id="git-merge"><code>git merge</code></h3>
+<ul>
+<li><strong>Unifies</strong> a target branch with the current branch</li>
+<li>Creates a <em>merge commit</em></li>
+<li>The merging algorithm is configurable</li>
+<li><strong>Conflicts</strong> must be solved manually</li>
+</ul>
+<p>$\Rightarrow$ <em>let&rsquo;s make an experiment!</em></p>
+<ul>
+<li>clone the repository at <a href="https://bit.ly/2021-merge-conflict">https://bit.ly/2021-merge-conflict</a></li>
+<li>merge branch <code>feature</code> into <code>master</code></li>
+</ul>
+</section><section>
+<h3 id="fast-forward"><em>fast-forward</em></h3>
+<ul>
+<li>A special merge mode applicable when a branch is <em>behind</em> another</li>
+<li>The target branch is <em>updated without a commit</em></li>
+<li>Active by default, can be disabled (<code>--no-ff</code>)</li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-11">Distributed version control with git: a recap</h2>
+<h3 id="remote"><em>Remote</em></h3>
+<ul>
+<li>(possibly remote) locations hosting copies of branches of this repository exist</li>
+</ul>
+<h3 id="git-remote"><code>git remote</code></h3>
+<ul>
+<li>Configures the <em>remotes</em></li>
+</ul>
+<h3 id="upstream"><em>upstream</em></h3>
+<ul>
+<li>The default <em>remote</em> for network operations.</li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-12">Distributed version control with git: a recap</h2>
+<h3 id="git-clone"><code>git clone</code></h3>
+<ul>
+<li>Copies a repository from a possibly remote location.</li>
+<li>Alternative to <code>init</code></li>
+<li>Automatically sets the local branch <em>upstream</em> to the cloned location.</li>
+</ul>
+</section><section>
+<h2 id="distributed-version-control-with-git-a-recap-13">Distributed version control with git: a recap</h2>
+<h3 id="git-fetch-remote"><code>git fetch &lt;remote&gt;</code></h3>
+<ul>
+<li><strong>Updates</strong> the state of <code>&lt;remote&gt;</code></li>
+<li>If remote is omitted, updates the state of the branch <em>upstream</em>&rsquo;s <em>remote</em></li>
+</ul>
+<h3 id="git-pull-remote-branch"><code>git pull &lt;remote&gt; &lt;branch&gt;</code></h3>
+<ul>
+<li><strong>Shortcut</strong> for <code>git fetch &amp;&amp; git merge FETCH_HEAD</code></li>
+</ul>
+<h3 id="git-push-remote-branch"><code>git push &lt;remote&gt; &lt;branch&gt;</code></h3>
+<ul>
+<li>Sends local changes <em>remote</em> <em>branch</em></li>
+<li>Requires branches to <strong>share a root</strong></li>
+<li>If remote and branch are omitted, updates are sent to the <em>upstream</em></li>
+</ul>
+</section><section>
+<h2 id="advanced-git">Advanced git</h2>
+<ul>
+<li>Tagging</li>
+<li>Signatures</li>
+<li>Stashing</li>
+<li>Rebasing</li>
+<li>Squashing</li>
+<li>Cherry picking</li>
+<li>Submodules</li>
+<li>Hooks</li>
+<li>Reflog</li>
+<li>Bisection</li>
+<li>&hellip;</li>
+</ul>
+</section><section>
+<h2 id="best-practices">Best practices</h2>
+<ul>
+<li>The <em>CLI is your truth</em>
+<ul>
+<li>Beware of the GUIs</li>
+</ul>
+</li>
+<li>Prepare an <em>ignore list</em> early
+<ul>
+<li>And maintain it</li>
+<li>And maybe prepare it manually and don&rsquo;t copy/paste it</li>
+</ul>
+</li>
+<li>When you have untracked files, <em>decide</em> whether you want to <em>track</em> them or <em>ignore</em> them</li>
+<li>Be very careful with <strong>what</strong> you track</li>
+<li>Prepare an <em>attribute file</em></li>
+</ul>
+</section><section>
+<h1 id="dvcs-workflows">DVCS: Workflows</h1>
+<blockquote>
+<p>with great power comes great responsibility</p>
+</blockquote>
+<p>and also</p>
+<blockquote>
+<p>power is nothing without control</p>
+</blockquote>
+<p>Elements to consider:</p>
+<ul>
+<li>How <em>large</em> is the team?</li>
+<li>How <em>complex</em> is the project?</li>
+<li>Do team members work <em>together</em> (in spacetime)?</li>
+<li>Do team members <em>trust</em> each other?</li>
+</ul>
+</section><section>
+<h2 id="trunk-based-development-like">Trunk-based development(-like)</h2>
+<p>Single branch, shared truth repository, frequent merges
+<br>
+<img src="2021-04-14-dvcs-sink.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 40vh;
+    object-fit: contain;
+'>
+</p>
+<ul>
+<li><em>Small</em> teams, <em>low-complexity</em> projects, <em>colocated</em> teams, <em>high</em> trust</li>
+<li>Typical of small company projects</li>
+</ul>
+</section><section>
+<h2 id="git-flow-classic">Git flow (classic)</h2>
+<p>Multiple branches, shared truth repository
+<br>
+<img src="2021-04-14-dvcs-flow-sink.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 40vh;
+    object-fit: contain;
+'>
+</p>
+<ul>
+<li><em>Large</em> teams, <em>high-complexity</em> projects, <em>preferably colocated</em> teams, <em>high</em> trust</li>
+<li>Typical of large company projects</li>
+</ul>
+</section><section>
+<h2 id="git-flow-structure">Git flow structure</h2>
+<img src="2021-04-13-gitflow.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 40vh;
+    object-fit: contain;
+'>
 
-<figure>
-  <img
-    src='https://g.gravizo.com/svg?%0a%20%20digraph%20G%20%7b%0a%20%20%20%20aize%20%3d%224%2c4%22%3b%0a%20%20%20%20main%20%5bshape%3dbox%5d%3b%0a%20%20%20%20main%20-%3e%20parse%20%5bweight%3d8%5d%3b%0a%20%20%20%20parse%20-%3e%20execute%3b%0a%20%20%20%20main%20-%3e%20init%20%5bstyle%3ddotted%5d%3b%0a%20%20%20%20main%20-%3e%20cleanup%3b%0a%20%20%20%20execute%20-%3e%20%7b%20make_string%3b%20printf%7d%0a%20%20%20%20init%20-%3e%20make_string%3b%0a%20%20%20%20edge%20%5bcolor%3dred%5d%3b%0a%20%20%20%20main%20-%3e%20printf%20%5bstyle%3dbold%2clabel%3d%22100%20times%22%5d%3b%0a%20%20%20%20make_string%20%5blabel%3d%22make%20a%20string%22%5d%3b%0a%20%20%20%20node%20%5bshape%3dbox%2cstyle%3dfilled%2ccolor%3d%22.7%20.3%201.0%22%5d%3b%0a%20%20%20%20execute%20-%3e%20compare%3b%0a%20%20%7d%0a'
-    alt='Example Gravizo graph'
-    />
-    <figcaption>Example Gravizo graph</figcaption>
-</figure>
+</section><section>
+<h2 id="forks-versus-branches">Forks versus branches</h2>
+<ul>
+<li>In Git, separate <em>development lines</em> are separate <em>branches</em></li>
+<li>However, everyone has a <em>copy</em> of the <em>same repository</em></li>
+<li>Git <em>hosting services</em> can <em>identify copies</em> of the same project belonging to different users</li>
+</ul>
+<p>These copies are called <strong>forks</strong></p>
+<ul>
+<li>Branches on one fork can be requested to be merged on another fork
+<ul>
+<li>With <strong>merge request</strong> (also called <strong>pull request</strong>, depending on the host)</li>
+</ul>
+</li>
+<li>Pull requests enable easier code review
+<ul>
+<li>Necessary when the developer <em>does not trust</em> the contributor</li>
+<li>But very useful anyway</li>
+</ul>
+</li>
+<li>Working with pull requests is <strong>not part of git</strong> and <em>requires host support</em>
+<ul>
+<li>GitHub, GitLab, and Bitbucket all support pull requests</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="single-branch-multiple-forks">Single branch, multiple forks</h2>
+<ul>
+<li>Single branch, multiple independent repository copies</li>
+</ul>
+<p>
+<img src="2021-04-14-dvcs-fork.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 40vh;
+    object-fit: contain;
+'>
 
+</p>
+<ul>
+<li><em>Unknown</em> team size, <em>low-complexity</em> projects, <em>sparse</em> teams, <em>low</em> trust</li>
+<li>Typical of small open source projects</li>
+</ul>
+</section><section>
+<h2 id="git-flow-over-multiple-forks">Git flow over multiple forks</h2>
+<ul>
+<li>Single branch, multiple independent repository copies</li>
+</ul>
+<p>
+<img src="2021-04-14-dvcs-flow-fork.svg" style='
+    
+    
+    max-width: 95vw;
+    max-height: 40vh;
+    object-fit: contain;
+'>
+
+</p>
+<ul>
+<li><em>Unknown</em> team size, <em>high-complexity</em> projects, <em>sparse</em> teams, <em>low</em> trust</li>
+<li>Typical of complex open-source projects (and, often, an <em>overkill</em>)</li>
+</ul>
+</section><section>
+<h1 id="the-build-life-cycle">The build &ldquo;life cycle&rdquo;</h1>
+<h4 id="not-to-be-confused-with-the-system-development-life-cycle-sdlc">(Not to be confused with the system development life cycle (SDLC))</h4>
+<p>The process of creating <em>tested deployable software artifacts</em>
+<br/>
+from <em>source</em> code</p>
+<p>May include, depending on the system specifics:</p>
+<ul>
+<li><em>Source code manipulation</em> and generation</li>
+<li>Source code <em>quality assurance</em></li>
+<li><em>Dependency management</em></li>
+<li><em>Compilation</em>, linking</li>
+<li><em>Binary manipulation</em></li>
+<li><em>Test execution</em></li>
+<li>Test <em>quality assurance</em> (e.g., coverage)</li>
+<li>API <em>documentation</em></li>
+<li><em>Packaging</em></li>
+<li><em>Delivery</em></li>
+</ul>
+</section><section>
+<h1 id="build-automation">Build automation</h1>
+<p>Automation of the build lifecycle</p>
+<ul>
+<li>In principle, the lifecycle could be executed manually</li>
+<li>In reality <em>time is precious</em> and <em>repetitivy is boring</em></li>
+</ul>
+<p>$\Rightarrow$ Create software that automates the building of some software!</p>
+<ul>
+<li>All those concerns that hold for sofware creation hold for build systems creation&hellip;</li>
+</ul>
+</section><section>
+<h1 id="dependency-management">Dependency management</h1>
+<ul>
+<li>Any software <strong>depends</strong> on other software
+<ul>
+<li>The <em>runtime environment</em> (think of the Java Virtual Machine)</li>
+<li>The <em>core libraries</em> (e.g., <code>java.*</code>, <code>javax.*</code>)</li>
+<li>Possibly <em>third-party libraries</em> (e.g., Google Guava, Apache Commons&hellip;)</li>
+<li>Possibly <em>external resources</em> (e.g., images, sounds, translation files&hellip;)</li>
+</ul>
+</li>
+<li>Normally, this <em>software depends on other software</em>
+<ul>
+<li>That <em>depends on other software</em>
+<ul>
+<li>That <em>depends on other software</em>
+<ul>
+<li>That <em>depends on other software</em>, and so on&hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A normal applications has a <strong>tree</strong> of dependencies</li>
+</ul>
+</section><section>
+<h2 id="towards-a-dependency-hell">Towards a <strong>dependency hell</strong></h2>
+<ul>
+<li>It&rsquo;s common for non-toy projects to get past 50 dependencies</li>
+<li><em>Searching</em>, <em>downloading</em> and <em>verifying compatibility</em> by hand is unbearable</li>
+<li><strong>Version conflicts</strong> arise soon
+<ul>
+<li>one of your direct dependencies uses library A at version 1</li>
+<li>another uses library A at version 2</li>
+<li>$\Rightarrow$  <em>transitive dependency conflict</em> on A</li>
+</ul>
+</li>
+<li><strong>Upgrading</strong> by hand requires, <em>time</em>, <em>effort</em> and <em>tons of testing</em></li>
+</ul>
+</section><section>
+<h2 id="dealing-with-dependencies">Dealing with dependencies</h2>
+<p><strong>Source import</strong></p>
+<p>Duplication, more library code than business code, updates almost impossible, inconsistencies, unmaintainable</p>
+<p><strong>Binary import</strong></p>
+<p>Hard to update, <a href="https://bitbucket.org/danysk/exploded-repository-example">toxic for the VCS</a></p>
+<p><strong>Desiderata</strong></p>
+<ul>
+<li><em>Declarative</em> specification of libraries and versions</li>
+<li><em>Automatic retrieval</em></li>
+<li>Automatic <em>resolution of transitive dependencies</em></li>
+<li>Dependency <strong>scopes</strong>
+<ul>
+<li>You may need <em>compile-only</em>, <em>test-only</em>, and <em>runtime-only</em> dependencies</li>
+</ul>
+</li>
+<li>Customizable software <em>sources</em></li>
+</ul>
+</section><section>
+<h1 id="quality-assurance">Quality Assurance</h1>
+<p><em>&ldquo;It works&rdquo;</em> <strong>is <em>not</em> good enough</strong></p>
+<p>(besides, the very notion of &ldquo;it works&rdquo; is rather debatable)</p>
+<ul>
+<li>Software quality should be <em>continuously assessed</em></li>
+<li>The assessment should <em>automatic</em> whenever possible</li>
+<li><strong>QA should be integrated in the build system!</strong>
+<ul>
+<li>It is fine to <em>fail the build</em> if quality criteria are not met</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="quality-assurance-levels">Quality Assurance: levels</h2>
+<ul>
+<li><em>Style</em> and <em>coherence</em></li>
+<li><em>Flawed programming</em> patterns</li>
+<li>Violations of the <em>DRY</em> principle</li>
+<li><strong>Testing</strong>
+<ul>
+<li>Multifaceted issue</li>
+<li>To be executed along the whole software lifecycle</li>
+<li>$\Rightarrow$ Plenty of detail in upcoming lectures</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="quality-assurance-style-and-coherence">Quality Assurance: style and coherence</h2>
+<p>Automated checkers are also called <em>linters</em>, often provide an auto-formatting tool</p>
+<p><strong>Idiomatic</strong> and <strong>standardized</strong> code:</p>
+<ul>
+<li>reduces <em>complexity</em></li>
+<li>improves <em>understandandability</em></li>
+<li>prevents <em>style-changing commits</em> with <em>unintelligible diffs</em></li>
+<li>lowers the <em>maintenance</em> burden and related <em>costs</em></li>
+<li>simplifies <em>code reviews</em></li>
+</ul>
+<p>In <em>Java</em>:
+<a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
+<a href="https://pmd.github.io/">PMD</a></p>
+</section><section>
+<h2 id="quality-assurance-flawed-programming-patterns">Quality Assurance: flawed programming patterns</h2>
+<p>Identification and reporting of <em>patterns</em> known to be <em>problematic</em></p>
+<ul>
+<li>Early-interception of <em>potential bugs</em></li>
+<li>Enforce <em>good programming principles</em></li>
+<li>Improves <em>performance</em></li>
+<li>Reduces <em>complexity</em></li>
+<li>Reduces <em>maintenance cost</em></li>
+</ul>
+<p>In <em>Java</em>:
+<a href="https://pmd.github.io/">PMD</a>,
+<a href="https://spotbugs.github.io/">SpotBugs</a></p>
+</section><section>
+<h2 id="quality-assurance-violations-of-the-dry-principle">Quality Assurance: violations of the DRY principle</h2>
+<p>Code <em>replicated</em> rather than <em>reused</em></p>
+<ul>
+<li>improves <em>understandandability</em></li>
+<li>Reduces <em>maintenance cost</em></li>
+<li>simplifies <em>code reviews</em></li>
+</ul>
+<p>General advice: <strong>never copy/paste</strong> your code</p>
+<ul>
+<li>If you need to copy something, you probably need to <em>refactor</em> something</li>
+</ul>
+<p>Multi-language tool: <a href="https://pmd.github.io/latest/pmd_userdocs_cpd.html">Copy/Paste Detector (CPD)</a> (part of PMD)</p>
+</section><section>
+<h2 id="quality-assurance-testing-and-coverage">Quality Assurance: testing and coverage</h2>
+<p><strong>Automated</strong> software verification</p>
+<ul>
+<li>Unit level</li>
+<li>Integration testing</li>
+<li>End-to-end testing</li>
+</ul>
+<p>Extension of testing can be evaluated via <strong>coverage</strong>.</p>
+<ul>
+<li>Coverage tells you <em>how much code is <strong>untested</strong>, not how much is tested</em></li>
+</ul>
+<p>Several frameworks, recommended ones:</p>
+<ul>
+<li>Testing for <em>all JVM languages</em>: <a href="https://junit.org/junit5/docs/current/user-guide/">Junit/Jupiter (JUnit 5)</a></li>
+<li>Coverage for all JVM languages: <a href="https://www.eclemma.org/jacoco/">JaCoCo</a></li>
+</ul>
+</section><section>
+<h2 id="additional-checks-and-reportings">Additional checks and reportings</h2>
+<p>There exist a number of recommended services that provide additional QA and reports.</p>
+<p>Non exhaustive list:</p>
+<ul>
+<li><a href="https://codecov.io/">Codecov.io</a>
+<ul>
+<li>Code coverage</li>
+<li>Supports Jacoco XML reports</li>
+<li>Nice data reporting system</li>
+</ul>
+</li>
+<li><a href="https://sonarcloud.io/">Sonarcloud</a>
+<ul>
+<li>Multiple measures, covering reliability, security, maintainability, duplication, complexity&hellip;</li>
+</ul>
+</li>
+<li><a href="https://www.codacy.com/">Codacy</a>
+<ul>
+<li>Automated software QA for several languages</li>
+</ul>
+</li>
+<li><a href="https://www.codefactor.io/">Code Factor</a>
+<ul>
+<li>Automated software QA</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="continuous-integration">Continuous Integration</h1>
+<p>The practice of integrating code with the main development line <strong>continuously</strong>
+<br>
+<em>Verifying</em> that the build remains intact</p>
+<ul>
+<li>Requires <em>build automation</em> to be in place</li>
+<li>Requires <em>testing</em> to be in place</li>
+<li>Pivot point of the <em>DevOps</em> practices</li>
+<li>Historically introduced by the extreme programming (XP) community</li>
+<li>Now widespread in the larger DevOps community</li>
+</ul>
+</section><section>
+<h1 id="the-integration-hell">The Integration Hell</h1>
+<ul>
+<li>Traditional software development takes several months for <em>“integrating”</em> a couple of years of development</li>
+<li>The longer there is no integrated project, the higher the <strong>risk</strong></li>
+</ul>
+<p><img src="integration-traditional.png" style='
+    
+    
+    max-width: 20vw;
+    max-height: 50vh;
+    object-fit: contain;
+'>
+
+<img src="integration-continuous.png" style='
+    
+    
+    max-width: 20vw;
+    max-height: 50vh;
+    object-fit: contain;
+'>
+</p>
+</section><section>
+<h2 id="microreleases-and-protoduction">Microreleases and protoduction</h2>
+<ul>
+<li>High frequency integration may lead to high frequency releases
+<ul>
+<li>Possibly, <em>one per commit</em></li>
+<li>Of course, <em>versioning</em> must be appropriate&hellip;</li>
+</ul>
+</li>
+</ul>
+<p>Traditionally, <strong>protoduction</strong> is jargon for a <em>prototype that ends up in production</em></p>
+<img src="protoduction.jpg" style='
+    
+    
+    max-width: 10vw;
+    max-height: 28vh;
+    object-fit: contain;
+'>
+
+<ul>
+<li>Traditionally used with a <em>negative</em> meaning
+<ul>
+<li>It implied software
+<ul>
+<li><em>unfinished</em>,</li>
+<li><em>unpolished</em>,</li>
+<li><em>badly designed</em></li>
+</ul>
+</li>
+<li>Very common, unfortunately</li>
+</ul>
+</li>
+<li>This si different in a continuously integrated environment
+<ul>
+<li><em>Incrementality</em> is fostered</li>
+<li>Partial features are <em>up to date</em> with the mainline</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="intensive-operations-should-be-elsewhere">Intensive operations should be elsewhere</h2>
+<ul>
+<li>The build process should be <em>rich</em> and <em>fast</em></li>
+<li>Operations requiring a long time should be <em>automated</em>
+<ul>
+<li>And run somewhere else than devs' PCs</li>
+</ul>
+</li>
+</ul>
+<p>
+<img src="compiling.png" style='
+    
+    
+    max-width: 95vw;
+    max-height: 50vh;
+    object-fit: contain;
+'>
+
+</p>
+</section><section>
+<h2 id="continuous-integration-software">Continuous integration software</h2>
+<p>Software that promotes CI practices should:</p>
+<ul>
+<li>Provide <em>clean environments</em> for compilation/testing</li>
+<li>Provide a <em>wide range</em> of environments
+<ul>
+<li>Matching the relevant specifications of the actual targets</li>
+</ul>
+</li>
+<li>High degree of <em>configurability</em></li>
+<li>Possibly, <em>declarative configuration</em></li>
+<li>A <em>notification system</em> to alert about failures or issues</li>
+<li>Support for <em>authentication</em> and deployment to external services</li>
+</ul>
+<p><strong>Plenty</strong> of integrators on the market</p>
+<ul>
+<li>GitHub Actions, Circle CI, Travis CI, Werker, done.io, Codefresh, Codeship, Bitbucket Pipelines&hellip;</li>
+</ul>
+</section><section>
+<h1 id="core-concepts">Core concepts</h1>
+<p>Naming and organization is variable across platforms, but <em>in general</em>:</p>
+<ul>
+<li>One or more <strong>pipelines</strong> can be associated to <strong>events</strong>
+<ul>
+<li>For instance, a <em>new commit</em>, an update to a <em>pull request</em>, or a <em>timeout</em></li>
+</ul>
+</li>
+<li>Every pipeline is composed of a <strong>sequence</strong> of <strong>operations</strong> (<em>jobs</em>, <em>stages</em>, <em>phases</em>)</li>
+<li>Every <strong>operation</strong> could be composed of sequential or parallel <strong>sub-operations</strong> (<em>jobs</em>, <em>phases</em>, <em>steps</em>)</li>
+<li>How many hierarchical levels are available depends on the specific platform
+<ul>
+<li>GitHub Actions: <em>workflow</em> $\Rightarrow$ <em>job</em> $\Rightarrow$ <em>step</em></li>
+<li>Travis CI: <em>build</em> $\Rightarrow$ <em>stage</em> $\Rightarrow$ <em>job</em>  $\Rightarrow$ <em>phase</em></li>
+</ul>
+</li>
+<li>Execution happens in a <strong>fresh system</strong> (virtual machine or container)
+<ul>
+<li>Often containers inside virtual machines</li>
+<li>The specific point of the hierarchy at which the VM/container is spawned depends on the CI platform</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="automated-delivery">Automated delivery</h1>
+<p>Once the <em>reference environment</em> in CI completed the software construction and testing,
+it should <strong>sign</strong> and then <strong>deliver</strong> the result.</p>
+<ul>
+<li>Possibly, even <strong>deploy</strong> the result, putting it at work</li>
+</ul>
+<h3 id="some-delivery-targets">Some delivery targets</h3>
+<ul>
+<li><a href="https://docs.github.com/en/github/administering-a-repository/about-releases">GitHub releases</a>
+<ul>
+<li>Retract, language agnostic, good for releases</li>
+</ul>
+</li>
+<li><a href="https://search.maven.org/">Sonatype OSSRH (a.k.a. <em>Maven Central</em>)</a>
+<ul>
+<li>De-facto standard for JVM products, no retract policy</li>
+</ul>
+</li>
+<li><a href="https://github.com/features/packages">GitHub packages</a>
+<ul>
+<li>No retract, authentication required also in read mode, immature</li>
+</ul>
+</li>
+<li><del>JFrog Bintray</del> <a href="https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/">✝ 2021-05-01</a>
+<ul>
+<li>Maven Central + other stuff</li>
+</ul>
+</li>
+</ul>
+<p>In <a href="https://github.com/AlchemistSimulator/Alchemist/tree/3535e1b42097c86c6d5d3662fff554558381e5fc">this repository</a>,
+delivery is enabled towards all the aforementioned destinations</p>
+</section><section>
+<h1 id="no-retract">No-retract</h1>
+<p>Your error will remain in the repositories <em>forever</em> and you will <em>never</em> be able to
+fix it, you will need to <em>create a new release</em> with a <em>different version number</em>.</p>
+<p><strong>Anectodal apologia of no-retract policies</strong></p>
+<p>In March 2016, Azer Koçlu unpublished more than 250 of his modules
+from NPM, which is a popular package manager used by Javascript
+projects to install dependencies, because he was asked to rename the
+module <code>Kik</code>, whose name is the same of an instant messaging app that
+wanted to publish a homonym module.
+Unfortunately, one of those dependencies was <code>left-pad</code>, a <em>11-line-long</em>
+Javascript module, used by <em>thousands</em> of projects. This brought
+breackages throughout many Javascript products (most notably Node and
+Babel). NPM had to un-unpublish <code>left-pad</code>.</p>
+</section><section>
+<h2 id="picking-version-numbers">Picking version numbers</h2>
+<blockquote>
+<p>Without compliance to some sort of formal specification, version
+numbers are essentially useless for dependency management. By
+giving a name and clear definition to the above ideas, it becomes
+easy to communicate your intentions to the users of your software.</p>
+</blockquote>
+<h3 id="semantic-versioninghttpsemverorg"><a href="http://semver.org/">Semantic versioning</a></h3>
+<ul>
+<li>Formally described, RFC-style</li>
+<li>Three levels plus optional: <code>MAJOR.MINOR.PATCH[-OTHER][+BUILD]</code>
+<ul>
+<li><code>MAJOR</code> — Any incompatible API change
+<ul>
+<li>Major <code>0</code> is for initial development: anything may change at any time.</li>
+</ul>
+</li>
+<li><code>MINOR</code> — Add functionality in a backwards-compatible manner</li>
+<li><code>PATCH</code> — Backwards-compatible bug fixes</li>
+<li><code>OTHER</code> — Optionally decorates the version with additional information.</li>
+<li><code>BUILD</code> — Optionally decorates the version with build information.</li>
+</ul>
+</li>
+<li>First release: <code>0.1.0</code>, <code>1.0.0</code> formalizes the API</li>
+</ul>
 </section>
 
   
@@ -290,9 +968,9 @@ joined</p>
       
 
     </div>
-<script type="text/javascript" src=/Template-Hugo-Reveal-Slides/reveal-hugo/object-assign.js></script>
+<script type="text/javascript" src=/Slides-2021-DevOps-DVCS-Urbino/reveal-hugo/object-assign.js></script>
 
-<a href="/Template-Hugo-Reveal-Slides/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<a href="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/css/print/" id="print-location" style="display: none;"></a>
 <script type="text/javascript">
   var printLocationElement = document.getElementById('print-location');
   var link = document.createElement('link');
@@ -302,10 +980,10 @@ joined</p>
   document.getElementsByTagName('head')[0].appendChild(link);
 </script>
 
-<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"custom_theme_options":{"enablesourcemap":true,"targetpath":"css/custom-theme.css"},"highlight_theme":"solarized-dark","history":true,"slide_number":true,"theme":"league","transition":"slide","transition_speed":"fast"}</script>
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"custom_theme_options":{"enablesourcemap":true,"targetpath":"css/custom-theme.css"},"height":"900","highlight_theme":"idea","history":true,"slide_number":true,"theme":"league","transition":"slide","transition_speed":"fast","width":"1440"}</script>
 <script type="application/json" id="reveal-hugo-page-params">null</script>
 
-<script src="/Template-Hugo-Reveal-Slides/reveal-js/js/reveal.js"></script>
+<script src="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/js/reveal.js"></script>
 
 <script type="text/javascript">
   
@@ -337,16 +1015,16 @@ joined</p>
 
   
   
-  <script type="text/javascript" src="/Template-Hugo-Reveal-Slides/reveal-js/plugin/markdown/marked.js"></script>
+  <script type="text/javascript" src="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/plugin/markdown/marked.js"></script>
   
-  <script type="text/javascript" src="/Template-Hugo-Reveal-Slides/reveal-js/plugin/markdown/markdown.js"></script>
+  <script type="text/javascript" src="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/plugin/markdown/markdown.js"></script>
   
-  <script type="text/javascript" src="/Template-Hugo-Reveal-Slides/reveal-js/plugin/highlight/highlight.js"></script>
+  <script type="text/javascript" src="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/plugin/highlight/highlight.js"></script>
   
-  <script type="text/javascript" src="/Template-Hugo-Reveal-Slides/reveal-js/plugin/zoom-js/zoom.js"></script>
+  <script type="text/javascript" src="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/plugin/zoom-js/zoom.js"></script>
   
   
-  <script type="text/javascript" src="/Template-Hugo-Reveal-Slides/reveal-js/plugin/notes/notes.js"></script>
+  <script type="text/javascript" src="/Slides-2021-DevOps-DVCS-Urbino/reveal-js/plugin/notes/notes.js"></script>
 
 
 
